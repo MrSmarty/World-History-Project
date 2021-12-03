@@ -1,0 +1,26 @@
+.content {
+    display: none;
+    background-color: #DDDDDD;
+    width: 60%;
+    padding: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #70BB90;
+    border-width: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #222222;
+    color: #FFFFFF;
+}

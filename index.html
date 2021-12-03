@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>World History Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="showhide.js"></script>
+</head>
+
+<body>
+    <h1>World History Website</h1>
+    <div class="region">
+        <h2 class="regionname">Achaea</h2>
+        <button onclick="showHide('achaea')">Show/Hide</button>
+        <div class="content" id="achaea">
+            <p>Some content...</p>
+        </div>
+    </div>
+    <div class="region">
+        <h2 class="regionname">Britannia</h2>
+        <button onclick="showHide('britannia')">Show/Hide</button>
+        <div class="content" id="britannia">
+            <p>Some content...</p>
+        </div>
+    </div>
+    <div class="region">
+        <h2 class="regionname">Judea</h2>
+        <button onclick="showHide('judea')">Show/Hide</button>
+        <div class="content" id="judea">
+            <h4>People:</h4>
+            <ul>
+                <li>Jews</li>
+                <li>Syrians</li>
+            </ul>
+            <h4>Religion:</h4>
+            <ul>
+                <li>Polytheistic</li>
+                <li>Monotheistic</li>
+            </ul>
+            <h4>Technology & Weaponry</h4>
+            <ul>
+                <li>Judeans:</li>
+                <ul>
+                    <li>Spears</li>
+                    <li>Bows and Arrows</li>
+                    <li>Metal Shields</li>
+                </ul>
+                <li>Romans:</li>
+                <ul>
+                    <li>Crossbows</li>
+                    <li>Catapults</li>
+                    <li>Metal Shields</li>
+                </ul>
+            </ul>
+            <h4>Armies:</h4>
+            <ul>
+                <li>Judeans: 3,000 men</li>
+                <li>Romans: 350,000 men</li>
+            </ul>
+            <!--
+                People: Jews and Syrians
+                Religion: Polytheistic and Monotheistic 
+                Technology/weaponry: Judians: Spears, bows and arrows, metal shields| Romans: Crossbows, catapults, metal shields, etc.
+                Army: Judea: 3,000 men| Romans: 350,000
+            -->
+        </div>
+    </div>
+    <div class="region">
+        <h2 class="regionname">Gaul</h2>
+        <button onclick="showHide('gaul')">Show/Hide</button>
+        <div class="content" id="gaul">
+            <p>Some content...</p>
+        </div>
+    </div>
+</body>
+
+</html>
