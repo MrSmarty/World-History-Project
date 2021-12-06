@@ -8,20 +8,40 @@
     color: #222222;
 }
 
+.region {
+    margin: 20px;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #509B70;
+}
+
 button {
     width: 100px;
     height: 60px;
     color: #FFFFFF;
     background-color: #70BB90;
     border-width: 0px;
+    border-radius: 2px;
+    font-size: 18px;
 }
 
 h1 {
     text-align: center;
 }
 
+footer {
+    background-color: #70BB90;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: sans-serif;
     background-color: #222222;
     color: #FFFFFF;
+    margin: 0px;
 }
