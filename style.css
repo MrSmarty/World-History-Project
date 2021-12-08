@@ -15,6 +15,11 @@
     text-align: center;
 }
 
+.contactRegion {
+    width: 100%;
+    text-align: center;
+}
+
 .contact {
     background-color: #222222;
     color: #FFFFFF;
@@ -72,6 +77,7 @@ footer {
     width: 100%;
     position: absolute;
     padding: 10px;
+    text-align: center;
 }
 
 body {
