@@ -11,13 +11,6 @@
 <body>
     <h1>World History Website</h1>
     <div class="region">
-        <h2 class="regionname">Rome</h2>
-        <button onclick="showHide('rome')">Show/Hide</button>
-        <div class="content" id="rome">
-
-        </div>
-    </div>
-    <div class="region">
         <h2 class="regionname">Achaea</h2>
         <button onclick="showHide('achaea')" class="accordion">Show/Hide</button>
         <div class="content" id="achaea">
@@ -52,6 +45,14 @@
                 <li>Achaeans: 12,000 men</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <h4>Comparison:</h4>
+            <p>
+                Rome won this fight due to multiple reasons. They had more people, better weapons, and a better leader.
+                The Achaean
+                league, after a successful night attack, was too cocky and offered battle far too soon, causing their
+                loss. Greece was
+                annexed to Macedonia.
+            </p>
             <img class="achaeaSlides" src="img/achaea/400px-L'atleta_di_Fano.jpeg">
             <img class="achaeaSlides" src="img/achaea/Roman_Empire_-_Achaia_(125_AD).svg.png">
             <img class="achaeaSlides" src="img/achaea/download.jpeg">
@@ -94,6 +95,16 @@
                 <li>Britons: 20,000</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <h4>Comparison:</h4>
+            <p>
+                Romans Conquered Britannia relatively easily over a long period of time. Britannia at the beginning
+                wasn’t politically
+                united. Rome invaded a few tribes but not all of Britain. After ten more years, Rome decided to invade
+                Britannia. Over
+                the next twenty years they slowly established legions across the countries. They had better weaponry and
+                way more man
+                power.
+            </p>
             <img class="britanniaSlides" src="img/britannia/440px-Landing_of_the_Romans_on_the_Coast_of_Kent.jpeg">
             <img class="britanniaSlides" src="img/britannia/Roman_Empire_-_Britannia_(125_AD).svg.png">
             <img class="britanniaSlides" src="img/britannia/download.jpeg">
@@ -135,6 +146,17 @@
                 <li>Judeans: 3,000 men</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <h4>Comparison:</h4>
+            <p>
+                After the Romans tried to take Judaea over, Judaea revolted. Rome pushed back harder with more severe
+                countermeasures
+                and eventually won the war. Aftermath actually ended up destroying the Second Temple of Jerusalem.
+            </p>
+            <img class="judeaSlides" src="img/judea/download.jpeg">
+            <img class="judeaSlides" src="img/judea/Judaism.jpeg">
+            <img class="judeaSlides" src="img/judea/First_century_Iudaea_province.gif">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'judea')">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'judea')">&#10095;</button>
         </div>
     </div>
     <div class="region">
@@ -169,6 +191,20 @@
                 <li>Celts: 30,000 men</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <h4>Comparison:</h4>
+            <p>
+                Despite having generally larger men, longer spears, and a better military overall, Rome eventually won
+                the war. This was
+                the hardest of the four to fight for Rome. Rome was led by Julias Caesar. Rome likely picked up their
+                fighting styles
+                (lots of space for each soldier to show off battle skill)
+            </p>
+            <img class="gaulSlides" src="img/gaul/440px-Gaul_Soldiers.jpeg">
+            <img class="gaulSlides" src="img/gaul/GaulsinRome.jpeg">
+            <img class="gaulSlides" src="img/gaul/Map_Gallia_Tribes_Towns.png">
+            <img class="gaulSlides" src="img/gaul/380px-Hope-coventina01a.jpeg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'gaul')">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'gaul')">&#10095;</button>
         </div>
     </div>
     <footer>
@@ -186,6 +222,8 @@
         var slideIndex = 1;
         showDivs(slideIndex, "achaea");
         showDivs(slideIndex, "britannia");
+        showDivs(slideIndex, "judea");
+        showDivs(slideIndex, "gaul");
 
         function plusDivs(n, region) {
             showDivs(slideIndex += n, region);
