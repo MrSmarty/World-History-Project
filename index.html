@@ -14,6 +14,7 @@
         <h2 class="regionname">Rome</h2>
         <button onclick="showHide('rome')">Show/Hide</button>
         <div class="content" id="rome">
+
         </div>
     </div>
     <div class="region">
@@ -28,7 +29,8 @@
             </ul>
             <h4>Religion:</h4>
             <ul>
-                <li>N/A</li>
+                <li>Religion doesn't really have a name</li>
+                <li>Known today as <b>Greek Mythology</b></li>
             </ul>
             <h4>Technology & Weaponry:</h4>
             <ul>
@@ -50,6 +52,13 @@
                 <li>Achaeans: 12,000 men</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <img class="achaeaSlides" src="img/achaea/400px-L'atleta_di_Fano.jpeg">
+            <img class="achaeaSlides" src="img/achaea/Roman_Empire_-_Achaia_(125_AD).svg.png">
+            <img class="achaeaSlides" src="img/achaea/download.jpeg">
+            <img class="achaeaSlides" src="img/achaea/Two_hoplites.jpeg">
+            <img class="achaeaSlides" src="img/achaea/600px-Ancient_Greek_southern_regions.png">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'achaea')">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'achaea')">&#10095;</button>
         </div>
     </div>
     <div class="region">
@@ -69,6 +78,9 @@
             <ul>
                 <li>Britons:</li>
                 <ul>
+                    <li>Armor</li>
+                    <li>Bow & Arrows</li>
+                    <li>Swords</li>
                 </ul>
                 <li>Romans:</li>
                 <ul>
@@ -79,9 +91,14 @@
             </ul>
             <h4>Armies:</h4>
             <ul>
-                <li>Britons: </li>
+                <li>Britons: 20,000</li>
                 <li>Romans: 350,000 men</li>
             </ul>
+            <img class="britanniaSlides" src="img/britannia/440px-Landing_of_the_Romans_on_the_Coast_of_Kent.jpeg">
+            <img class="britanniaSlides" src="img/britannia/Roman_Empire_-_Britannia_(125_AD).svg.png">
+            <img class="britanniaSlides" src="img/britannia/download.jpeg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1, 'britannia')">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1, 'britannia')">&#10095;</button>
         </div>
     </div>
     <div class="region">
@@ -118,12 +135,6 @@
                 <li>Judeans: 3,000 men</li>
                 <li>Romans: 350,000 men</li>
             </ul>
-            <!--
-                People: Jews and Syrians
-                Religion: Polytheistic and Monotheistic 
-                Technology/weaponry: Judians: Spears, bows and arrows, metal shields| Romans: Crossbows, catapults, metal shields, etc.
-                Army: Judea: 3,000 men| Romans: 350,000
-            -->
         </div>
     </div>
     <div class="region">
@@ -168,8 +179,29 @@
             <div class="contact">Github</div>
         </a> <br>
         <p>Created by Lincoln Smith, Alex <i>"Math Daddy"</i> Hebert, Townsend Wheeler, Nicholas Noack, and
-            VaperMan69420 (CeilingCrawler3 (Permavirgin4Life (Gingy (Michael))))</p>
+            VaperMan69420 (CeilingCrawler3 (<span style="text-decoration: line-through;">Permavirgin4Life</span> (Gingy
+            (Michael))))</p>
     </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex, "achaea");
+        showDivs(slideIndex, "britannia");
+
+        function plusDivs(n, region) {
+            showDivs(slideIndex += n, region);
+        }
+
+        function showDivs(n, region) {
+            var i;
+            var x = document.getElementsByClassName(region + "Slides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 
 </html>

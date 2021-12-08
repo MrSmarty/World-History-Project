@@ -30,6 +30,14 @@
     background-color: #111111;
 }
 
+.achaeaSlides, .britanniaSlides {
+    height: 400px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 li {
     text-align: left;
 }
